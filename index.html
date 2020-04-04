@@ -5,47 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="pantalla">
         <div class="contenido">
-            <h1>Mis tareas</h1>
-            <div class="cont-form">
-                <form action="#">
-                    <div class="form-input">
-                        <input type="text" placeholder="Agrega tarea" id="txtTarea">
-                        <svg id="calendario">
-                                <use href="img/iconos/icons.svg#calendar" /> 
-                        </svg>
-                    </div>
-                    <input type="submit" value="Agregar" id="btnAgregar">
-                </form>
-                <div id="menu">
-                    <ul>
-                        <li><a href="#">Realizadas</a></li>
-                        <li><a href="#">Tareas</a></li>
-                        <li><a href="#">Vencidas</a></li>
-                    </ul>
+            <div class="title">
+                <h1>Mis tareas</h1>
+                <svg class="ico-task">
+                    <use href="img/iconos/icons.svg#task"/> 
+                </svg>
+            </div>
+            <form action="#">
+                <div class="form-input">
+                    <input type="text" autocomplete="off" placeholder="Escribe tarea" id="txtTarea">
+                    <svg id="calendario">
+                            <use href="img/iconos/icons.svg#calendar" /> 
+                    </svg>
                 </div>
-                <div id="lista-tareas">
-                    <div id="tarea">
-                        <li>
-                            Primera Tarea...
-                            <span>
-                                <svg class="icon">
-                                    <use href="img/iconos/icons.svg#lapiz"/> 
-                                </svg>
-                                <svg class="icon">
-                                    <use href="img/iconos/icons.svg#check"/> 
-                                </svg>
-                                <svg class="icon">
-                                    <use href="img/iconos/icons.svg#x"/> 
-                                </svg>
-                            </span>
-                        </li>
-                    </div>
-                    
-                </div>                
+                <input type="submit" value="Agregar" id="btnAgregar">
+            </form>
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Realizadas</a></li>
+                    <li><a href="#">Pendientes</a></li>
+                    <li><a href="#">Vencidas</a></li>
+                </ul>
+            </div>
+            <div id="lista-tareas">
+                <li class="gray">
+                    Primera Tarea...
+                    <span>
+                        <svg class="icon gray">
+                            <use href="img/iconos/icons.svg#lapiz"/> 
+                        </svg>
+                        <svg class="icon gray">
+                            <use href="img/iconos/icons.svg#check"/> 
+                        </svg>
+                        <svg class="icon gray">
+                            <use href="img/iconos/icons.svg#x"/> 
+                        </svg>
+                    </span>
+                </li>
+                <li class="red">
+                    Primera Tarea...
+                    <span>
+                        <svg class="icon red">
+                            <use href="img/iconos/icons.svg#lapiz"/> 
+                        </svg>
+                        <svg class="icon red">
+                            <use href="img/iconos/icons.svg#check"/> 
+                        </svg>
+                        <svg class="icon red">
+                            <use href="img/iconos/icons.svg#x"/> 
+                        </svg>
+                    </span>
+                </li>
+                <li class="green">
+                    Primera Tarea...
+                    <span>
+                        <svg class="icon green">
+                            <use href="img/iconos/icons.svg#lapiz"/> 
+                        </svg>
+                        <svg class="icon green">
+                            <use href="img/iconos/icons.svg#check"/> 
+                        </svg>
+                        <svg class="icon green">
+                            <use href="img/iconos/icons.svg#x"/> 
+                        </svg>
+                    </span>
+                </li>
             </div>
         </div>
     </div>    

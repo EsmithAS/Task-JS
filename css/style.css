@@ -1,0 +1,148 @@
+@font-face{
+    font-family: Moon;
+    src: url('Moon2.0-Regular.woff');
+}
+*{
+    font-family: Moon;
+    letter-spacing: 2px;
+    color: #23272B;
+}
+body{
+    background-color: #23272B;
+}
+.pantalla{
+    width: 640px;
+    height: 1136px;
+    margin: auto;
+    background-color: white;
+}
+.contenido{
+    width: 80%;
+    margin: auto;
+    padding: 10%;
+}
+
+/*TITULO*/
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 5px;
+}
+.ico-task{
+    width: 45px;
+    height: 45px;
+    margin: 10px 20px 0;
+    fill: #23272B;
+}
+
+/*FORMULARIO*/
+form{
+    margin: 70px 0;
+}
+
+.form-input{
+    display: flex;
+    justify-content: space-between;
+}
+#txtTarea{
+    width: 400px;
+    padding: 10px 20px;
+    background-color: #E6E6E6;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    color: ;
+}
+#calendario{
+    width: 20px;
+    height: 20px;
+    padding: 9px 20px;
+    background-color: #2C8DCC;
+    fill: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#calendario:hover{
+    background-color: rgb(41, 125, 180);
+}
+#btnAgregar{
+    padding: 10px 70px;
+    margin: 15px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #2C8DCC;
+    border-radius: 5px;
+    border-style: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+#btnAgregar:hover{
+    background-color: rgb(41, 125, 180);
+}
+/*MENU*/
+
+#menu ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+#menu li{
+    display: inline-flex;
+}
+#menu a{
+    text-decoration: none;
+    color: #727272;
+    font-weight: bold;
+    font-size: 17px;
+}
+#menu a:hover{
+    color: #23272B;
+}
+
+/*LISTA*/
+#lista-tareas{
+    margin: 50px 0px;
+}
+#lista-tareas li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    margin: 15px 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#lista-tareas span{
+    width: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.gray{
+    background-color: #E6E6E6;
+    color: #999999;    
+    fill: #999999;
+}
+.red{
+    background-color: #ED7E7E;
+    color: #DF5854;
+    fill: #DF5854;
+}
+.green{
+    background-color: #D0F980;
+    color: #B1D852;
+    fill: #B1D852;
+}
+
+/*dennys.cruzj@gmail.com*/
