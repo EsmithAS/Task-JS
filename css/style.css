@@ -50,13 +50,12 @@ form{
     justify-content: space-between;
 }
 #txtTarea{
-    width: 400px;
+    width: 100%;
     padding: 10px 20px;
     background-color: #E6E6E6;
     border-radius: 5px;
     border-style: none;
     outline: none;
-    color: ;
 }
 #calendario{
     width: 20px;
