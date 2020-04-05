@@ -69,21 +69,32 @@ form{
 #calendario:hover{
     background-color: rgb(41, 125, 180);
 }
-#btnAgregar{
+.btn{
     padding: 10px 70px;
     margin: 15px 0 0;
     font-size: 15px;
     font-weight: bold;
-    background-color: #2C8DCC;
     border-radius: 5px;
     border-style: none;
     outline: none;
     cursor: pointer;
     color: white;
+    background-color: #ED8555;
 }
-#btnAgregar:hover{
+.btn:hover{
+    background-color: rgb(211, 111, 65);
+}
+.Agregar{
+    background-color: #2C8DCC;
+}
+.Agregar:hover{
     background-color: rgb(41, 125, 180);
 }
+
+.Actualizar{
+    display: none;
+}
+
 /*MENU*/
 
 #menu ul{
