@@ -1,6 +1,7 @@
 // variables
 let id = document.querySelector.bind(document);
 const lista = id('#lista-tareas');
+id('#Todas').style.color = '#23272B';
 
 
 // AddEventListener
@@ -8,7 +9,7 @@ const lista = id('#lista-tareas');
 addEventListener();
 
 function addEventListener(){
-    
+
     document.addEventListener( 'DOMContentLoaded' , mostrarTareas );
     id('#contenido').addEventListener( 'click', accionTarea );
     id('#menu').addEventListener( 'click', menu );
@@ -21,9 +22,7 @@ function addEventListener(){
         case 2:   
                 id('#Todas').style.color = '#23272B';break;
     }
-
 }
-
 
 
 
@@ -78,7 +77,12 @@ function agregarTarea (){ // Agregar tarea al LocalStorage
 
 function mostrarTareas () { // Mostrar tareas del LocalStorage
     
-    const filtro = parseInt(localStorage.getItem('menu'));
+    if (localStorage.getItem('menu')== null){
+        localStorage.setItem('menu',2);
+    }
+    let filtro = parseInt(localStorage.getItem('menu'));
+    
+    
     lista.innerHTML = '';
     let liTarea = function ( id , tarea , clase ){
         const estado = clase === 'green' ? 'volver' : 'check';
